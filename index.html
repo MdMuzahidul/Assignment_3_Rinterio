@@ -35,7 +35,48 @@
 
 <body>
     <!-- header section start -->
-    <header></header>
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <a>
+                        <div class="flex items-center justify-center gap-2">
+                            <div class=" flex h-8 w-8 bg-button justify-center items-center rounded-full">
+                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-black">Rinterio</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="navbar hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Services</a> </li>
+                        <li> <a href="#">Portfolio</a> </li>
+                        <li> <a href="#">Blogs</a> </li>
+                        <li> <a href="#">Contact Us</a> </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-5 hidden md:contents">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div>
+                        <a class="btn">Button</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!-- main section start -->
     <main>
@@ -43,7 +84,7 @@
     </main>
 
     <!-- footer start -->
-    <footer class="bg-black py-28">
+    <footer class="bg-black py-16 md:py-28">
         <div class="max-w-80 md:max-w-2xl text-center mx-auto space-y-4">
             <div class="flex items-center space-x-2 justify-center">
                 <div class=" flex h-7 w-7 bg-button justify-center items-center rounded-full">
