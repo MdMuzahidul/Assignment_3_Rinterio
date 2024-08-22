@@ -16,6 +16,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        second: '#737373',
+                        button: '#ABEF5F',
+
                     }
                 }
             }
@@ -31,19 +34,46 @@
 </head>
 
 <body>
+    <!-- header section start -->
     <header></header>
-    <main></main>
-    <footer>
+
+    <!-- main section start -->
+    <main>
+
+    </main>
+
+    <!-- footer start -->
+    <footer class="bg-black py-28">
         <div class="max-w-80 md:max-w-2xl text-center mx-auto space-y-4">
             <div class="flex items-center space-x-2 justify-center">
-                <div class=" flex h-7 w-7 bg-green-600 justify-center items-center rounded-full">
+                <div class=" flex h-7 w-7 bg-button justify-center items-center rounded-full">
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
                 </div>
-                <h3 class="text-2xl font-extrabold">Rinterio</h3>
+                <h3 class="text-2xl font-extrabold text-white">Rinterio</h3>
             </div>
             <div>
-                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <p class="text-second">The barn house captivates with its blend of rustic charm and modern
+                    sophistication,
+                    featuring
+                    weathered wood, sleek metal accents.</p>
             </div>
+        </div>
+        <div class="max-w-screen-md mx-auto mt-12">
+            <ul class="md:flex space-y-4 md:space-y-0 md:justify-between md:items-center md:gap-28 text-[#E9E9E9]">
+                <li class="text-center"> <a href="#">Home</a> </li>
+                <li class="text-center"> <a href="#">Services</a> </li>
+                <li class="text-center"> <a href="#">Portfolio</a> </li>
+                <li class="text-center"> <a href="#">Blogs</a> </li>
+                <li class="text-center"> <a href="#">Contact Us</a> </li>
+            </ul>
+        </div>
+        <div class="w-full text-center mt-12">
+            <button class="btn bg-button rounded-[32px] font-extrabold ">
+                Book Consult
+                <div class=" flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+                </div>
+            </button>
         </div>
     </footer>
 </body>
