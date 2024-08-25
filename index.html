@@ -1,122 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Daisy UI CND -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- customize Tailwind -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                        second: '#737373',
-                        button: '#ABEF5F',
-
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              second: "#737373",
+              button: "#ABEF5F",
+            },
+          },
+        },
+      };
     </script>
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Rinterio</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- header section start -->
     <header class="container mx-auto">
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                    </div>
-                    <a>
-                        <div class="flex items-center justify-center gap-2">
-                            <div class=" flex h-8 w-8 bg-button justify-center items-center rounded-full">
-                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                            </div>
-                            <h3 class="text-3xl font-extrabold text-black">Rinterio</h3>
-                        </div>
-                    </a>
-                </div>
-                <div class="navbar hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1 text-base">
-                        <li> <a href="#">Home</a> </li>
-                        <li> <a href="#">Services</a> </li>
-                        <li> <a href="#">Portfolio</a> </li>
-                        <li> <a href="#">Blogs</a> </li>
-                        <li> <a href="#">Contact Us</a> </li>
-
-                    </ul>
-                </div>
-                <div class="navbar-end space-x-5 hidden md:contents">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <div>
-                        <a class="btn">Button</a>
-                    </div>
-                </div>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
             </div>
-        </nav>
+            <a>
+              <div class="flex items-center justify-center gap-2">
+                <div
+                  class="flex h-8 w-8 bg-button justify-center items-center rounded-full"
+                >
+                  <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+                <h3 class="text-3xl font-extrabold text-black">Rinterio</h3>
+              </div>
+            </a>
+          </div>
+          <div class="navbar hidden lg:flex">
+            <ul class="menu menu-horizontal space-x-8 px-1 text-base">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-4 hidden md:contents">
+            <div
+              class="bg-white h-12 w-12 flex items-center justify-center rounded-full"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div
+              class="bg-white h-12 w-12 flex items-center justify-center rounded-[56px]"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <button class="btn bg-button rounded-[32px] font-extrabold">
+              Book Consult
+              <div
+                class="flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full"
+              >
+                <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="container flex flex-col items-center space-y-4">
+        <div class="text-center mx-auto h-[160px] w-[261px] md:h-auto md:w-auto">
+          <img src="/assets/banner.png" alt="" />
+        </div>
+        <div class="text-center">
+          <h1
+            class="text-3xl lg:text-6xl font-extrabold mb-6 max-w-80 lg:max-w-screen-lg mx-auto"
+          >
+            A barn house of this design has a striking appearance
+          </h1>
+          <p class="mb-8 max-w-80 lg:max-w-screen-md mx-auto">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button
+            class="btn bg-button rounded-[32px] font-extrabold mb-10 lg:mb-28"
+          >
+            View Details
+            <div
+              class="flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full"
+            >
+              <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+            </div>
+          </button>
+        </div>
+      </div>
     </header>
 
     <!-- main section start -->
-    <main>
-
-    </main>
+    <main></main>
 
     <!-- footer start -->
     <footer class="bg-black py-16 md:py-28">
-        <div class="max-w-80 md:max-w-2xl text-center mx-auto space-y-4">
-            <div class="flex items-center space-x-2 justify-center">
-                <div class=" flex h-7 w-7 bg-button justify-center items-center rounded-full">
-                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                </div>
-                <h3 class="text-2xl font-extrabold text-white">Rinterio</h3>
-            </div>
-            <div>
-                <p class="text-second">The barn house captivates with its blend of rustic charm and modern
-                    sophistication,
-                    featuring
-                    weathered wood, sleek metal accents.</p>
-            </div>
+      <div class="max-w-80 md:max-w-2xl text-center mx-auto space-y-4">
+        <div class="flex items-center space-x-2 justify-center">
+          <div
+            class="flex h-7 w-7 bg-button justify-center items-center rounded-full"
+          >
+            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+          </div>
+          <h3 class="text-2xl font-extrabold text-white">Rinterio</h3>
         </div>
-        <div class="max-w-screen-md mx-auto mt-12">
-            <ul class="md:flex space-y-4 md:space-y-0 md:justify-between md:items-center md:gap-28 text-[#E9E9E9]">
-                <li class="text-center"> <a href="#">Home</a> </li>
-                <li class="text-center"> <a href="#">Services</a> </li>
-                <li class="text-center"> <a href="#">Portfolio</a> </li>
-                <li class="text-center"> <a href="#">Blogs</a> </li>
-                <li class="text-center"> <a href="#">Contact Us</a> </li>
-            </ul>
+        <div>
+          <p class="text-second">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
         </div>
-        <div class="w-full text-center mt-12">
-            <button class="btn bg-button rounded-[32px] font-extrabold ">
-                Book Consult
-                <div class=" flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full">
-                    <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
-                </div>
-            </button>
-        </div>
+      </div>
+      <div class="max-w-screen-md mx-auto mt-12">
+        <ul
+          class="md:flex space-y-4 md:space-y-0 md:justify-between md:items-center md:gap-28 text-[#E9E9E9]"
+        >
+          <li class="text-center"><a href="#">Home</a></li>
+          <li class="text-center"><a href="#">Services</a></li>
+          <li class="text-center"><a href="#">Portfolio</a></li>
+          <li class="text-center"><a href="#">Blogs</a></li>
+          <li class="text-center"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="w-full text-center mt-12">
+        <button class="btn bg-button rounded-[32px] font-extrabold">
+          Book Consult
+          <div
+            class="flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full"
+          >
+            <i class="fa-solid fa-arrow-right -rotate-45 text-white"></i>
+          </div>
+        </button>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
