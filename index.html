@@ -40,7 +40,9 @@
 
   <body>
     <!-- header section start -->
-    <header class="container mx-auto">
+    <header
+      class="container mx-auto bg-gradient-to-t from-[rgba(255, 255, 255, 1)] to-[rgba(255, 255, 255, 0)]"
+    >
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -105,7 +107,9 @@
         </div>
       </nav>
       <div class="container flex flex-col items-center space-y-4">
-        <div class="text-center mx-auto h-[160px] w-[261px] md:h-auto md:w-auto">
+        <div
+          class="text-center mx-auto h-[160px] w-[261px] md:h-auto md:w-auto"
+        >
           <img src="/assets/banner.png" alt="" />
         </div>
         <div class="text-center">
@@ -134,7 +138,31 @@
     </header>
 
     <!-- main section start -->
-    <main></main>
+    <main>
+      <!-- we design section -->
+      <section>
+        <div class="hidden lg:contents">
+          <img src="/assets/Vector.png" alt="" />
+        </div>
+        <div class="hero bg-base-200 min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+              class="max-w-sm rounded-lg shadow-2xl"
+            />
+            <div>
+              <h1 class="text-5xl font-bold">Box Office News!</h1>
+              <p class="py-6">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn btn-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- footer start -->
     <footer class="bg-black py-16 md:py-28">
@@ -166,7 +194,9 @@
         </ul>
       </div>
       <div class="w-full text-center mt-12">
-        <button class="btn bg-button rounded-[32px] font-extrabold">
+        <button
+          class="btn hover:bg-button bg-button rounded-[32px] font-extrabold"
+        >
           Book Consult
           <div
             class="flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full"
