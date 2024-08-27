@@ -37,10 +37,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
     <title>Rinterio</title>
   </head>
 
-  <body>
+  <body class="manrope-font">
     <!-- header section start -->
     <header
       class="bg-gradient-to-t from-[rgba(255,255,255,1)] to-[rgba(255,255,255,0)]"
@@ -79,22 +95,36 @@
               </a>
             </div>
             <div class="navbar hidden lg:flex">
-              <ul class="menu menu-horizontal space-x-8 px-1 text-base">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact Us</a></li>
+              <ul
+                class="menu menu-horizontal space-x-4 px-1 text-base text-[#737373]"
+              >
+                <li class="hover:text-[#494949] hover:font-extrabold">
+                  <a href="#">Home</a>
+                </li>
+                <li class="hover:text-[#494949] hover:font-extrabold">
+                  <a href="#">Services</a>
+                </li>
+                <li class="hover:text-[#494949] hover:font-extrabold">
+                  <a href="#">Portfolio</a>
+                </li>
+                <li class="hover:text-[#494949] hover:font-extrabold">
+                  <a href="#">Blogs</a>
+                </li>
+                <li class="hover:text-[#494949] hover:font-extrabold">
+                  <a href="#">Contact Us</a>
+                </li>
               </ul>
             </div>
             <div class="navbar-end space-x-4 hidden md:contents">
-              <div class="bg-white rounded-full py-2 p-3">
+              <div class="bg-white rounded-full py-2 p-3 border">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </div>
-              <div class="bg-white rounded-full py-2 px-3">
+              <div class="bg-white rounded-full py-2 px-3 border">
                 <i class="fa-solid fa-cart-shopping"></i>
               </div>
-              <button class="btn bg-button rounded-[32px] font-extrabold">
+              <button
+                class="btn hover:bg-button bg-button rounded-[32px] font-extrabold"
+              >
                 Book Consult
                 <div
                   class="flex h-7 w-7 text-xl bg-black justify-center items-center rounded-full"
@@ -124,7 +154,7 @@
               light.
             </p>
             <button
-              class="btn bg-button rounded-[32px] font-extrabold mb-10 lg:mb-28"
+              class="btn bg-button hover:bg-button rounded-[32px] font-extrabold mb-10 lg:mb-28"
             >
               View Details
               <div
@@ -158,7 +188,7 @@
               </button>
             </div>
             <h2
-              class="text-2xl lg:text-5xl font-bold max-w-72 mx-auto lg:text-start lg:max-w-2xl text-center"
+              class="text-2xl lg:text-5xl font-extrabold max-w-72 mx-auto lg:text-start lg:max-w-2xl text-center"
             >
               We design thoughtful, liveable spaces
             </h2>
@@ -187,10 +217,10 @@
               class="max-w-screen-2xl flex items-center space-x-6 bg-white p-6 rounded-2xl"
             >
               <div>
-                <img src="./assets/commercial.png" alt="" />
+                <img src="./assets/residential.png" alt="" />
               </div>
               <div class="max-w-80 space-y-3">
-                <h4 class="text-xl font-bold">Commercial</h4>
+                <h4 class="text-xl font-bold">Residential</h4>
                 <p class="text-[rgba(115, 115, 115, 1)]">
                   The barn house captivates with its blend of rustic charm and
                   modern.
@@ -204,9 +234,11 @@
         </div>
       </section>
       <!-- our work process -->
-      <section>
+      <section class="mb-8 lg:mb-24">
         <div class="text-center space-y-5 mb-8">
-          <button class="btn">how we work</button>
+          <button class="btn bg-white hover:bg-white">
+            <i class="fa-solid fa-arrow-right"></i> how we work
+          </button>
           <h2
             class="text-4xl font-bold capitalize mb-2 max-w-md mx-auto text-[rgba(33, 33, 33, 1)]"
           >
@@ -404,8 +436,9 @@
               required
             />
             <textarea
+
               placeholder="write your message here"
-              class="rounded-[32px] p-5 capitalize h-60 lg:col-span-2"
+              class="rounded-[32px] p-5 capitalize h-60 lg:col-span-2 resize-none"
             ></textarea>
             <button
               class="btn hover:bg-button bg-button lg:col-span-2 text-xl capitalize rounded-[32px] font-bold"
@@ -440,51 +473,82 @@
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              What services does Rinterio offer?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>
+                Rinterio provides a wide range of house design services,
+                including architectural design, interior design, and custom home
+                planning. They cater to both new constructions and renovation
+                projects, offering tailored solutions to fit the specific needs
+                and style preferences of their clients.
+              </p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              How can I view the portfolio of Rinterio's past projects?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>
+                You can view Rinterio's portfolio by visiting the "Projects" or
+                "Gallery" section of their website. This section typically
+                showcases a collection of images and descriptions of completed
+                projects, giving you a sense of their design style and
+                expertise.
+              </p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              Does Rinterio offer online consultations?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>
+                Yes, Rinterio offers online consultations for clients who prefer
+                to discuss their design needs remotely. You can schedule a
+                consultation through the "Contact Us" or "Services" section on
+                their website.
+              </p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              What should I prepare before my first meeting with Rinterio?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>
+                Before your first meeting with Rinterio, it’s helpful to have a
+                clear idea of your design goals, budget, and any specific
+                preferences or inspirations you have in mind. Bringing along
+                photos, sketches, or Pinterest boards can also help convey your
+                vision to the designers.
+              </p>
             </div>
           </div>
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title text-xl font-medium">
-              Click to open this one and close others
+              Can I customize the designs provided by Rinterio?
             </div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>
+                Absolutely! Rinterio prides itself on creating customized
+                designs that meet the unique needs of each client. During the
+                design process, you’ll work closely with their team to ensure
+                that the final design aligns with your personal style and
+                functional requirements.
+              </p>
             </div>
           </div>
         </div>
         <div class="text-center">
-          <p class="text-primary mt-8 mb-4 capitalize font-medium">get any more questions?</p>
+          <p class="text-primary mt-8 mb-4 capitalize font-medium">
+            get any more questions?
+          </p>
           <button
             class="border-2 py-3 px-4 text-black rounded-lg bg-green-300 text-base font-bold capitalize mb-4"
           >
